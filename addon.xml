@@ -14,13 +14,13 @@
 	<extension point="kodi.addon.metadata">
 		<summary lang="en">Download all missing artwork configured in Artwork Beef for the selected item.</summary>
 		<description lang="en">Download all missing artwork configured in Artwork Beef for the selected item. Added to the 'Manage...' context menu. It also supports Artwork Downloader with a setting.</description>
+		<source>https://github.com/rmrector/context.artwork.downloader.auto</source>
+		<license>The MIT License</license>
 		<disclaimer lang="en" />
 		<platform>all</platform>
 		<language />
-		<website>https://github.com/rmrector/context.artwork.downloader.auto</website>
+		<website />
 		<forum />
 		<email />
-		<license>The MIT License</license>
-		<source>https://github.com/rmrector/context.artwork.downloader.auto</source>
 	</extension>
 </addon>
