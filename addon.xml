@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.artwork.downloader.auto" name="Download All Artwork - Artwork Downloader" version="1.0.2~dev" provider-name="rmrector">
+<addon id="context.artwork.downloader.auto" name="Download All Artwork" version="1.0.2~dev" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="15.0.0" />
 		<import addon="xbmc.python" version="2.20.0" />
-		<import addon="script.artwork.downloader" version="12.0.29" />
 	</requires>
 	<extension point="kodi.context.item" library="context.py">
 		<item>
@@ -13,8 +12,8 @@
 		</item>
 	</extension>
 	<extension point="kodi.addon.metadata">
-		<summary lang="en">Download all missing artwork configured in Artwork Downloader for the selected item.</summary>
-		<description lang="en">Download all missing artwork configured in Artwork Downloader for the selected item. Added to the 'Manage...' context menu. The add-on Artwork Downloader does all the work, this just runs it for the selected item.</description>
+		<summary lang="en">Download all missing artwork configured in Artwork Beef for the selected item.</summary>
+		<description lang="en">Download all missing artwork configured in Artwork Beef for the selected item. Added to the 'Manage...' context menu. It also supports Artwork Downloader with a setting.</description>
 		<disclaimer lang="en" />
 		<platform>all</platform>
 		<language />

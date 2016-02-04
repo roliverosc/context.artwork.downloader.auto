@@ -1,5 +1,6 @@
 import sys
 import xbmc
+import xbmcaddon
 
 def main():
     if xbmc.getCondVisibility('Container.Content(tvshows)'):
@@ -21,7 +22,8 @@ def main():
     else:
         dbid = xbmc.getInfoLabel('ListItem.DBID')
 
-    xbmc.executebuiltin('RunScript(script.artwork.downloader, mediatype=%s, dbid=%s)' % (mediatype, dbid))
+    artworkaddon = xbmcaddon.Addon().getSetting('artwork_addon')
+    xbmc.executebuiltin('RunScript({0}, mediatype={1}, dbid={2})'.format(artworkaddon, mediatype, dbid))
 
     if mismatch:
         xbmc.sleep(1000)
