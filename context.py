@@ -1,6 +1,7 @@
 import sys
 import xbmc
 import xbmcaddon
+import xbmcgui
 
 def main():
     if xbmc.getCondVisibility('Container.Content(tvshows)'):
@@ -23,6 +24,9 @@ def main():
         dbid = xbmc.getInfoLabel('ListItem.DBID')
 
     artworkaddon = xbmcaddon.Addon().getSetting('artwork_addon')
+    if not xbmc.getCondVisibility('System.HasAddon({0})'.format(artworkaddon)):
+        xbmcgui.Dialog().ok('Select Artwork to Download', "The add-on {0} is not installed. Please install it or configure this context item to use another add-on.".format(artworkaddon))
+        return
     xbmc.executebuiltin('RunScript({0}, mediatype={1}, dbid={2})'.format(artworkaddon, mediatype, dbid))
 
     if mismatch:
