@@ -11,7 +11,7 @@ def main():
     elif xbmc.getCondVisibility('Container.Content(musicvideos)'):
         mediatype = 'musicvideo'
     else:
-        log("Content type not supported, not looking up '%s'." % sys.listitem.getLabel())
+        xbmc.executebuiltin('Notification(Download All Artwork cannot proceed, "Got an unexpected content type. Try again, it will probably work.", 6000, DefaultIconWarning.png)')
         return
 
     infolabel = xbmc.getInfoLabel('ListItem.Label')
