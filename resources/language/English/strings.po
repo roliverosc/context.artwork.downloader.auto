@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 
 msgctxt "#32000"
-msgid "Download All Artwork"
-msgstr "Download All Artwork"
+msgid "Add missing artwork"
+msgstr ""
 
 msgctxt "#32900"
 msgid "Artwork add-on"
