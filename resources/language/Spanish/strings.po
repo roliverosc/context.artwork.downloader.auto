@@ -6,4 +6,4 @@ msgstr ""
 
 msgctxt "#32000"
 msgid "Download All Artwork"
-msgstr "Descargar todas las Ilustraciones"
+msgstr "Descargar todo el Artwork"
